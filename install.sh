@@ -76,6 +76,8 @@ cd ~
 # LAPP stack
 sudo apt install -y apache2 php7.1 postgresql-9.6 php7.1-pgsql
 sudo apt install -y php7.1-bcmath php7.1-xml php7.1-mbstring
+sudo a2enmod rewrite
+sudo systemctl restart apache2.service
 
 # install docker CE
 sudo apt -y install apt-transport-https ca-certificates curl
